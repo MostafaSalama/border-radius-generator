@@ -3,7 +3,7 @@
 > ✨ This is a simple app to generate border-radius for quick usage.
 ## Getting Started 
 
-go to https://csb-i0o9h-bo694ev7m.vercel.app/ and play with it 
+go to https://csb-i0o9h.mostafatourad.vercel.app/ and play with it 
 
 ## Demo 
 ![demo page](./demo.png)
