@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './box.module.css'
+import InputRange from "./InputRange";
 
 const Box = ({})=>{
     return (
