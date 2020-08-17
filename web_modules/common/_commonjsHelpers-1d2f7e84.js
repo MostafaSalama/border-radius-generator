@@ -1,0 +1,1 @@
+function u(t,e,r){return r={path:e,exports:{},require:function(o,n){return p(o,n??r.path)}},t(r,r.exports),r.exports}function p(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}export{u as c};

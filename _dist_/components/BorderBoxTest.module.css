@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.quote {
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #b0b2b0;
+    border-left-width: 8px;
+    width: max-content;
+    padding: 0 20px;
+}
+.text {
+    color: #C92C2C;
+}

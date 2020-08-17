@@ -1,0 +1,1 @@
+import e from"../../web_modules/react.js";import t from"./InputRange.js";import n from"./InputRangeContainer.module.css.proxy.js";const _=()=>e.createElement("div",{className:n.container},e.createElement(t,{index:0,key:0}),e.createElement(t,{index:1,key:1}),e.createElement(t,{index:2,key:2}),e.createElement(t,{index:3,key:3}));export default _;
