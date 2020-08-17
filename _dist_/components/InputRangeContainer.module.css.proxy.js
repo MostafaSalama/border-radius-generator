@@ -1,11 +1,5 @@
-
-export let code = "._dist_components_InputRangeContainer_module__container {\r\n    text-align: center;\r\n    margin-top: 20px;\r\n}\r\n";
-let json = {"container":"_dist_components_InputRangeContainer_module__container"};
-export default json;
-
-const styleEl = document.createElement("style");
-const codeEl = document.createTextNode(code);
-styleEl.type = 'text/css';
-
-styleEl.appendChild(codeEl);
-document.head.appendChild(styleEl);
+export let code=`._dist_components_InputRangeContainer_module__container {\r
+    text-align: center;\r
+    margin-top: 20px;\r
+}\r
+`;let n={container:"_dist_components_InputRangeContainer_module__container"};export default n;const e=document.createElement("style"),t=document.createTextNode(code);e.type="text/css",e.appendChild(t),document.head.appendChild(e);

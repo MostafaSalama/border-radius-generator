@@ -1,15 +1,1 @@
-function createCommonjsModule(fn, basedir, module) {
-	return module = {
-	  path: basedir,
-	  exports: {},
-	  require: function (path, base) {
-      return commonjsRequire(path, (base === undefined || base === null) ? module.path : base);
-    }
-	}, fn(module, module.exports), module.exports;
-}
-
-function commonjsRequire () {
-	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
-}
-
-export { createCommonjsModule as c };
+function u(t,e,r){return r={path:e,exports:{},require:function(o,n){return p(o,n??r.path)}},t(r,r.exports),r.exports}function p(){throw new Error("Dynamic requires are not currently supported by @rollup/plugin-commonjs")}export{u as c};

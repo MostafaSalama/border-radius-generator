@@ -1,18 +1,1 @@
-import React, { useContext } from '../../web_modules/react.js';
-import BorderContext from "../app-context.js";
-import style from './BorderBoxTest.module.css.proxy.js';
-
-const BorderBoxText = () => {
-  const {
-    borderValues
-  } = useContext(BorderContext);
-  return /*#__PURE__*/React.createElement("div", {
-    className: style.container
-  }, /*#__PURE__*/React.createElement("blockquote", {
-    className: style.quote
-  }, /*#__PURE__*/React.createElement("p", null, /*#__PURE__*/React.createElement("span", {
-    className: style.text
-  }, "border-radius"), ": ", borderValues.join(' '), ";")));
-};
-
-export default BorderBoxText;
+import e,{useContext as r}from"../../web_modules/react.js";import s from"../app-context.js";import t from"./BorderBoxTest.module.css.proxy.js";const a=()=>{const{borderValues:o}=r(s);return e.createElement("div",{className:t.container},e.createElement("blockquote",{className:t.quote},e.createElement("p",null,e.createElement("span",{className:t.text},"border-radius"),": ",o.join(" "),";")))};export default a;

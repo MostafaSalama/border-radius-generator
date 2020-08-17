@@ -1,1 +1,1 @@
-export default "/_dist_/logo.svg";
+export default"/_dist_/logo.svg";

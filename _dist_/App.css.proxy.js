@@ -1,9 +1,7 @@
-
-const code = "* {\r\n  box-sizing: border-box;\r\n}\r\n.app {\r\n  margin-top: 5%;\r\n}\r\n";
-
-const styleEl = document.createElement("style");
-const codeEl = document.createTextNode(code);
-styleEl.type = 'text/css';
-
-styleEl.appendChild(codeEl);
-document.head.appendChild(styleEl);
+const code=`* {\r
+  box-sizing: border-box;\r
+}\r
+.app {\r
+  margin-top: 5%;\r
+}\r
+`,styleEl=document.createElement("style"),codeEl=document.createTextNode(code);styleEl.type="text/css",styleEl.appendChild(codeEl),document.head.appendChild(styleEl);
