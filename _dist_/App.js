@@ -1,1 +1,28 @@
-import e,{useState as m}from"../web_modules/react.js";import"./logo.svg.proxy.js";import"./App.css.proxy.js";import s from"./components/Box.js";import _ from"./app-context.js";import l from"./components/InputRangeContainer.js";import c from"./components/BorderBoxText.js";function u(){const[o,r]=m(["50%","50%","50%","50%"]);function n(p,a){const t=[...o];t[p]=a,r(t)}return e.createElement("div",{className:"app"},e.createElement(_.Provider,{value:{borderValues:o,updateBorderAtIndex:n}},e.createElement(s,null),e.createElement(l,null),e.createElement(c,null)))}export default u;
+import React, { useState } from '../web_modules/react.js';
+import logo from './logo.svg.proxy.js';
+import './App.css.proxy.js';
+import Box from "./components/Box.js";
+import BorderContext from "./app-context.js";
+import InputRangeContainer from "./components/InputRangeContainer.js";
+import BorderBoxText from "./components/BorderBoxText.js";
+
+function App() {
+  const [borderValues, updateBorderValues] = useState(['50%', '50%', '50%', '50%']);
+
+  function updateBorderAtIndex(index, value) {
+    const newBorderValues = [...borderValues];
+    newBorderValues[index] = value;
+    updateBorderValues(newBorderValues);
+  }
+
+  return /*#__PURE__*/React.createElement("div", {
+    className: "app"
+  }, /*#__PURE__*/React.createElement(BorderContext.Provider, {
+    value: {
+      borderValues,
+      updateBorderAtIndex
+    }
+  }, /*#__PURE__*/React.createElement(Box, null), /*#__PURE__*/React.createElement(InputRangeContainer, null), /*#__PURE__*/React.createElement(BorderBoxText, null)));
+}
+
+export default App;

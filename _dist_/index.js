@@ -1,1 +1,13 @@
-import t from"https://github.com/MostafaSalama/border-radius-generator/__snowpack__/env.js";import.meta.env=t;import e from"../web_modules/react.js";import o from"../web_modules/react-dom.js";import m from"./App.js";import"./index.css.proxy.js";o.render(e.createElement(e.StrictMode,null,e.createElement(m,null)),document.getElementById("root")),import.meta.hot&&import.meta.hot.accept();
+import __SNOWPACK_ENV__ from 'https://github.com/MostafaSalama/border-radius-generator/__snowpack__/env.js';
+import.meta.env = __SNOWPACK_ENV__;
+
+import React from '../web_modules/react.js';
+import ReactDOM from '../web_modules/react-dom.js';
+import App from './App.js';
+import './index.css.proxy.js';
+ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__PURE__*/React.createElement(App, null)), document.getElementById('root')); // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
+// Learn more: https://www.snowpack.dev/#hot-module-replacement
+
+if (import.meta.hot) {
+  import.meta.hot.accept();
+}
