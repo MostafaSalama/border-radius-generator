@@ -1,4 +1,4 @@
-import __SNOWPACK_ENV__ from 'https://github.com/MostafaSalama/border-radius-generator/__snowpack__/env.js';
+import __SNOWPACK_ENV__ from 'https://MostafaSalama.github.io/border-radius-generator/__snowpack__/env.js';
 import.meta.env = __SNOWPACK_ENV__;
 
 import React from '../web_modules/react.js';
