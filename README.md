@@ -2,6 +2,9 @@
 
 > ✨ This is a simple app to generate border-radius for quick usage.
 
+
+## Demo 
+![demo page](./demo.png)
 ## Available Scripts
 
 ### npm start
@@ -9,8 +12,6 @@
 Runs the app in the development mode.
 Open http://localhost:8080 to view it in the browser.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
 ### npm test
 
