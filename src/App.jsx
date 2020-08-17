@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Box from "./components/Box";
+import BorderContext from "./app-context";
 
 function App() {
+  const [borderValues,updateBorderValues] = useState(['50%','50%','50%','50%']);
+  function updateBorderIndex(index,value) {
+        const newBorderValues = [...borderValues] ;
+        newBorderValues[index] = value;
+        updateBorderValues(newBorderValues)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BorderContext.Provider value={{borderValues,updateBorderValues}}>
+
+      </BorderContext.Provider>
     </div>
   );
 }
